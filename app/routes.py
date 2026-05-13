@@ -4,10 +4,7 @@ from pydantic import BaseModel
 from typing import Optional
 from . import models
 from .database import get_db
-from dotenv import load_dotenv
 import os
-
-load_dotenv()
 
 ADMIN_API_KEY = os.getenv("ADMIN_API_KEY")
 
